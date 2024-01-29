@@ -1,0 +1,66 @@
+#cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .card {
+        width: 32%;
+        display: flex;
+        flex-direction: column;
+        background-color: #F4F2F1;
+        transition: 1s;
+
+        img {
+            width: 100%;
+        }
+
+        .cardMain {
+            border: none;
+            border-bottom: 1px solid rgb(232, 232, 232);
+            padding: 26px 20px;
+
+            h3 {
+                color: $blue-color;
+                font-size: 26px
+            }
+
+            p {
+                margin: 8px 0;
+                font-family: $rubik-font;
+                color: #777777;
+            }
+        }
+
+        ul {
+
+            padding: 6px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            li {
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    font-size: 18px;
+                    font-weight: 600;
+                    font-family: $jost-font;
+                }
+
+            }
+        }
+
+        &:hover {
+            h3 {
+                color: $red-color;
+            }
+
+            button {
+                background-color: transparent;
+                border: 1px solid $red-color;
+                color: $red-color;
+            }
+        }
+    }
+}

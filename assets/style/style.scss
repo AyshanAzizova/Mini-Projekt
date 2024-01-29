@@ -3,6 +3,7 @@
 
 // COMPONENTS
 @import './components/button';
+@import './components/span';
 
 // BASE 
 @import './base/reset';
@@ -14,3 +15,8 @@
 
 // HOME PAGES
 @import './pages/home/hero';
+@import './pages/home/donateB12';
+@import './pages/home/charity';
+@import './pages/home/cards';
+@import './pages/home/doing';
+@import './pages/home/icons';

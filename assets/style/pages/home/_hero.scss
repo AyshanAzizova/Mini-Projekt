@@ -1,13 +1,105 @@
-#hero{
-    position: absolute;
+#hero {
+    position: relative;
     top: 0;
-    background-image:url(/assets/images/h1_hero1.jpg);
-   background-position: center;
-   background-size: cover;
-   background-repeat: no-repeat;
+    background-image: url(/assets/images/h1_hero1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
+    height: 130vh;
     display: flex;
     align-items: center;
-   
+
+    .container {
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 24px;
+            width: 40%;
+            height: max-content;
+            color: white;
+            font-family: $jost-font;
+
+            h1 {
+                font-size: 70px;
+                line-height: 70px;
+                font-weight: 500;
+                letter-spacing: -2px;
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 22px;
+            }
+
+            button {
+                width: 46%;
+            }
+
+        }
+    }
+
+}
+
+
+@media (max-width:575px) {
+    #hero {
+        .container {
+            
+            .content {
+                height: 2rem;
+                width: 100%;
+
+                h1 {
+                    font-size: 40px;
+                    color: blue;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    #hero {
+        .container {
+            .content {
+                width: 100%;
+
+                h1 {
+                    font-size: 20px;
+                    color: rgb(163, 163, 163);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1075px) {
+    #hero {
+        .container {
+            .content {
+                width: 60%;
+
+                h1 {
+                    font-size: 60px;
+                    color: blue;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1296px) {
+    #hero {
+        .container {
+            .content {
+                h1 {
+                    font-size: 60px;
+                    color: red;
+                }
+            }
+        }
+    }
 }

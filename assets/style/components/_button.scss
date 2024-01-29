@@ -1,5 +1,22 @@
-.btn{
+.btn1 {
+    cursor: pointer;
+    width: max-content;
     padding: 20px;
     color: white;
-    background-color: aquamarine;
+    background-color: $green-color;
+    border: none;
+}
+.btn2 {
+    cursor: pointer;
+    width: max-content;
+    padding: 20px;
+    color: white;
+    background-color: $red-color;
+    border: none;
+    transition: 0.5s;
+    &:hover{
+        background-color: transparent;
+        border: 1px solid $red-color;
+        color: $red-color;
+    }
 }
