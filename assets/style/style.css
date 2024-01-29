@@ -1,0 +1,136 @@
+.btn {
+  padding: 20px;
+  color: white;
+  background-color: aquamarine;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav {
+  padding: 10px 50px;
+  background-color: rgb(2, 7, 28);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .left {
+  display: flex;
+  gap: 70px;
+}
+nav .left ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-size: 18px;
+}
+nav .right {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+nav .right p span {
+  border-bottom: 1px dashed rgb(255, 255, 255);
+}
+nav .right a {
+  color: white;
+  background-color: rgb(255, 75, 75);
+  padding: 20px 20px;
+}
+nav .right a i {
+  color: white;
+}
+
+.burgerMenu {
+  z-index: 1;
+  position: relative;
+  top: -10px;
+  display: none;
+  justify-content: end;
+  padding: 10px 10px;
+  width: 98%;
+  background-color: gray;
+  margin: 0 auto;
+}
+.burgerMenu button {
+  color: white;
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 1400px) {
+  nav .right p {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .burgerMenu {
+    display: flex;
+  }
+  nav .left ul {
+    display: none;
+  }
+}
+@media only screen and (min-width: 992px) {
+  nav .left {
+    gap: 20px;
+  }
+  nav .left ul {
+    gap: 16px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  nav .left {
+    gap: 20px;
+  }
+  nav .left ul {
+    gap: 16px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  nav .left {
+    gap: 70px;
+  }
+  nav .left ul {
+    gap: 40px;
+  }
+}
+@media (max-width: 768px) {
+  nav .right a {
+    display: none;
+  }
+}
+#hero {
+  position: absolute;
+  top: 0;
+  background-image: url(/assets/images/h1_hero1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */

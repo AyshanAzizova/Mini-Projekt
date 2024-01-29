@@ -1,0 +1,140 @@
+// header{
+//     width: 100%;
+header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+    nav {
+   
+        padding: 10px 50px;
+        // background-color: transparent;
+        background-color: rgb(2, 7, 28);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        .left {
+            display: flex;
+            gap: 70px;
+    
+            ul {
+                display: flex;
+                align-items: center;
+                gap: 40px;
+                font-size: 18px;
+            }
+        }
+    
+        .right {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+    
+            p {
+                span {
+                    border-bottom: 1px dashed rgb(255, 255, 255);
+                }
+            }
+    
+            a {
+                color: white;
+                background-color: rgb(255, 75, 75);
+                padding: 20px 20px;
+    
+                i {
+                    color: white;
+                }
+    
+            }
+    
+        }
+    }
+    .burgerMenu{
+        z-index: 1;
+        position: relative;
+        top: -10px;
+        display: none;
+        justify-content: end;
+        padding: 10px 10px;
+        width: 98%;
+        // background-color: transparent;
+        background-color: gray;
+        margin: 0 auto;
+        button{
+            color: white;
+            padding: 10px 12px;
+            border-radius: 4px;
+            border: none;
+            background-color: rgba($color: #000000, $alpha: 0.7);
+        }
+    }
+
+// }
+
+
+@media (max-width:1400px) {
+    nav {
+        .right {
+            p {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width:992px) {
+    .burgerMenu{
+       display: flex;
+    }
+    nav {
+        .left {
+            ul {
+                display: none;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 992px) {
+   nav{
+    .left{
+        gap: 20px;
+        ul{
+            gap: 16px;
+           }
+    }
+   }
+  }
+  @media only screen and (max-width: 1200px) {
+    nav{
+        .left{
+            gap: 20px;
+            ul{
+                gap: 16px;
+               }
+        }
+       }
+  }
+  @media only screen and (min-width: 1200px) {
+    nav{
+        .left{
+            gap: 70px; 
+            ul{
+                gap: 40px;
+               }
+        }
+       }
+  }
+  @media (max-width:768px) {
+    nav{
+        .right{
+            a{
+                display: none;
+            }
+        }
+    }
+  }
+  
+  
