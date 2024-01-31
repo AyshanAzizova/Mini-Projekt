@@ -1,18 +1,25 @@
-.btn1 {
+.btn1{
     cursor: pointer;
     width: max-content;
-    padding: 20px;
+    padding:10px 20px;
+    display: inline-block;
     color: white;
     background-color: $green-color;
-    border: none;
+    border: 1px solid $green-color;
+    transition: 0.5s;
+    &:hover{
+        background-color: transparent;
+        border: 1px solid $green-color;
+        color: $green-color;
+    }
 }
 .btn2 {
     cursor: pointer;
     width: max-content;
-    padding: 20px;
+    padding:10px 20px;
     color: white;
     background-color: $red-color;
-    border: none;
+    border: 1px solid $red-color;
     transition: 0.5s;
     &:hover{
         background-color: transparent;

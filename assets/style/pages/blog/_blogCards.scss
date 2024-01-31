@@ -1,0 +1,188 @@
+#blogCards {
+    padding: 4rem 0;
+
+    .col8 {
+        .blogCards {
+            margin-bottom: 2rem;
+
+            .images {
+                position: relative;
+
+                img {
+                    width: 100%;
+                }
+
+                .abs {
+                    border-radius: 5px;
+                    position: absolute;
+                    background-color: $green-color;
+                    color: white;
+                    padding: 14px 29px;
+                    bottom: -18px;
+                    left: 39px;
+                    font-size: 16px;
+                    text-align: center;
+                    transition: 0.2s;
+                    &:hover{
+                        border: none;
+                        background-color: transparent;
+                        color: $green-color;
+                    }
+                    b {
+                        font-size: 26px;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .cardBody {
+                padding: 40px 30px 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                align-items: start;
+                box-shadow: 0px 10px 20px 0px rgba(221, 221, 221, 0.3);
+                font-family: $rubik-font;
+
+                p {
+                    color: rgb(90, 90, 90);
+                }
+
+                ul {
+                    padding-left: 0;
+                    display: flex;
+                    gap: 14px;
+
+                    li {
+                        a {
+                            color: gray;
+
+                            i {
+                                margin-right: 8px;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .number {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            text-align: center;
+            gap: 14px;
+            a{
+                border: 1px solid gray;
+                padding: 10px 16px;
+                display: inline-block;
+                color: rgb(199, 199, 199);
+                &:hover{
+                    color: $green-color;
+                }
+            }
+           
+        }
+    }
+
+    .col4 {
+        .recent-post {
+            .post {
+                display: flex;
+                margin-bottom: 20px;
+
+                div {
+                    padding-left: 16px ;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center !important;
+                    p{
+                        margin-bottom: 0;
+                    }
+                    h5{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .category {
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+
+                li {
+                    padding-bottom: 12px;
+                    border-bottom: 1px solid rgb(217, 217, 217);
+
+                    a {
+                        font-weight: 500;
+                        color: #737373;
+                    }
+                }
+            }
+        }
+
+        .blog_item1 {
+            ul {
+                padding-right: 3rem;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+
+                li {
+                    padding: 3px 12px;
+                    background-color: white;
+                    border: 1px solid rgb(175, 175, 175);
+
+                    a {
+                        color: rgb(144, 144, 144);
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+
+        .blog_item2 {
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+
+                li {
+                    width: 31%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .blog_item3 {
+
+            display: flex;
+            flex-direction: column;
+
+            input {
+                margin-top: 20px;
+                border: 1px solid gray;
+                padding: 8px;
+                margin-bottom: 10px;
+            }
+
+            button {
+                padding: 8px;
+                display: block;
+                border: 1px solid $green-color;
+                color: $green-color;
+                background-color: white;
+            }
+        }
+
+    }
+
+}

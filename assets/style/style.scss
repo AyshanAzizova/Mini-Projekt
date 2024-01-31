@@ -1,13 +1,14 @@
 // ABSTRACTS
 @import './abstracts/variables';
 
-// COMPONENTS
-@import './components/button';
-@import './components/span';
-
 // BASE 
 @import './base/reset';
 @import './base/typography';
+
+// COMPONENTS
+@import './components/button';
+@import './components/span';
+@import './components/blog_item';
 
 // LAYOUT
 @import './layout/header';
@@ -20,3 +21,8 @@
 @import './pages/home/cards';
 @import './pages/home/doing';
 @import './pages/home/icons';
+@import './pages/home/swiper';    
+
+// BLOG PAGES
+@import './pages/blog/blog';
+@import './pages/blog/blogCards';

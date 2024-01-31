@@ -9,6 +9,7 @@
         flex-direction: column;
         background-color: #F4F2F1;
         transition: 1s;
+        border: none;
 
         img {
             width: 100%;
@@ -57,10 +58,35 @@
             }
 
             button {
-                background-color: transparent;
-                border: 1px solid $red-color;
+                 background-color: transparent;
+                border-color:  $red-color;
                 color: $red-color;
             }
         }
     }
+}
+
+@media screen and (max-width: 768px) {
+    #cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        .card {
+            width: 46% !important;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #cards {
+        display: flex;
+        flex-direction: column;
+        .card {
+            width: 100% !important;
+            margin-bottom: 20px;
+        }
+     }
+    
 }

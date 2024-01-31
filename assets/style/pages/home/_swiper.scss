@@ -1,0 +1,53 @@
+ #swiper {
+     padding: 5rem 0;
+     h2{
+       font-size: 46px;
+         margin: 10px 0 50px;
+         color: $blue-color;
+    }
+
+    .content {
+        background: #F4F2F1;
+        padding: 30px;
+
+        p {
+            margin: 10px 0;
+            color: gray;
+            font-family: $rubik-font;
+        }
+
+        h3 {
+            a {
+                color: $blue-color;
+            }
+        }
+
+        &>a {
+            font-family: $rubik-font;
+            color: $red-color;
+            border-bottom: 3px solid $red-color;
+            transition: 0.3s;
+
+            &:hover {
+                letter-spacing: 1px;
+            }
+        }
+    }
+ }
+
+// .home-demo .item {
+//     background: #ff3f4d;
+ 
+button{
+    border: 1px solid rgb(213, 213, 213);
+    padding: 19px 28px;
+    color: rgb(189, 189, 189);
+    background-color: white;
+}
+
+
+// .owl-item {
+//     margin-left: 5px;
+//     background-color: #F4F2F1;
+//     height: max-content;
+// }
