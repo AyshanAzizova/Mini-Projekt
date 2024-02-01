@@ -249,6 +249,20 @@ footer .container .row .col:nth-child(1) img {
   width: 50%;
 }
 
+.arrowUp {
+  position: fixed;
+  bottom: 3%;
+  right: 3%;
+  z-index: 10;
+}
+.arrowUp i {
+  border-radius: 50%;
+  padding: 18px;
+  font-size: 16px;
+  color: white;
+  background-color: #65C9BB;
+}
+
 #hero {
   position: relative;
   top: 0;

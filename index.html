@@ -30,7 +30,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <nav>
             <div class="left">
                 <img src="./assets/images/logo2_footer.png" alt="">
@@ -135,7 +135,7 @@
                 <ul>
                     <li><span class="spn">$67,845</span>Goal</li>
                     <li> <span class="spn">$48,845</span>Raised</li>
-                        <li><button class="btn2">Donate</button></li>
+                    <li><button class="btn2">Donate</button></li>
                 </ul>
             </div>
         </section>
@@ -191,7 +191,7 @@
                         <div class="owl-dots">
                             <span class="spn">News</span>
                             <h2>Latest Blog</h2>
-                            <button  role="button" class=" owl-dot active"><i
+                            <button role="button" class=" owl-dot active"><i
                                     class="fa-solid fa-angle-left"></i></button>
                             <button role="button" class="owl-dot active"><i
                                     class="fa-solid fa-angle-right"></i></button>
@@ -286,7 +286,7 @@
                                 </div>
                                 <div class="item">
                                     <div class="myCard">
-                                        <img src="./assets/images/blog1.jpg" alt="">                                      
+                                        <img src="./assets/images/blog1.jpg" alt="">
                                         <div class="content">
                                             <h3><a href="#hero">Help the ecosystems</a></h3>
                                             <p>Sedac odio aliquet, fringilla odio eget, tincidunt nunc duis aliquet
@@ -398,40 +398,40 @@
             </div>
         </div>
     </footer>
+    <div class="arrowUp"><a href="#header"><i class="fa-solid fa-arrow-up"></i></a></div>
     <!-- Carousel JS -->
     <script>
         const nextIcon = '<i class="fa-solid fa-angle-right"></i>'
         const prevIcon = '<i class="fa-solid fa-angle-left"></i>'
         $(function () {
-          // Owl Carousel
-          var owl = $(".owl-carousel");
-          owl.owlCarousel({
-            items: 3,
-            margin: 20,
-            loop: true,
-            autoPlay:true,
-            dots:false,
-            nav: true,
-            navText:[prevIcon, nextIcon],
-            responsive:{
-            0:{
-                items:1,
-                nav:false,
-            },
-            600:{
-                items:2,
-                nav:false,
-            },
-            1000:{
-                items:2,
-                nav:true,
-                loop:false
-            }
-        }
-          });
+            // Owl Carousel
+            var owl = $(".owl-carousel");
+            owl.owlCarousel({
+                items: 3,
+                margin: 20,
+                loop: true,
+                autoPlay: true,
+                dots: false,
+                nav: true,
+                navText: [prevIcon, nextIcon],
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false,
+                    },
+                    600: {
+                        items: 2,
+                        nav: false,
+                    },
+                    1000: {
+                        items: 2,
+                        nav: true,
+                        loop: false
+                    }
+                }
+            });
         });
-    
-      </script>
+    </script>
 </body>
 
 </html>

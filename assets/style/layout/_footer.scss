@@ -79,3 +79,17 @@ footer {
         }
     }
 }
+
+.arrowUp {
+    position: fixed;
+    bottom: 3%;
+    right: 3%;
+    z-index: 10;
+    i {
+        border-radius: 50%;
+        padding: 18px;
+        font-size: 16px;
+        color: white;
+        background-color: $green-color;
+    }
+}
